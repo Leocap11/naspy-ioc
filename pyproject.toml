@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "naspy-ioc"
+version = "0.1.5"
+description = "NestJS-like IoC container and decorators for FastAPI"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+keywords = ["fastapi", "nestjs", "ioc", "dependency-injection", "decorators"]
+dependencies = [
+    "fastapi>=0.100.0",
+    "sqlalchemy>=2.0.0",
+    "starlette>=0.27.0",
+    "pydantic>=2.0.0",
+    "pydantic-settings>=2.0.0",
+    "asyncpg>=0.27.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["naspy"]
+
+[project.urls]
+Homepage = "https://github.com/Leocap11/naspy-ioc"
+Repository = "https://github.com/Leocap11/naspy-ioc"
+Issues = "https://github.com/Leocap11/naspy-ioc/issues"
